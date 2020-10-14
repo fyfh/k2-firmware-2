@@ -9,7 +9,7 @@
 #=============================================================
 
 # Uncomment a feed source
-echo "src-git helloworld https://github.com/fyfh/hellowwolrd" >> feeds.conf.default
-sed -i 's/7872/16384/' ./target/linux/ramips/image/mt7620.mk
+#echo "src-git helloworld https://github.com/fyfh/hellowwolrd" >> feeds.conf.default
+#sed -i 's/7872/16384/' ./target/linux/ramips/image/mt7620.mk
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
