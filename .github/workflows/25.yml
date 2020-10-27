@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt 1
+name: Build OpenWrt 415
 
 on:
   repository_dispatch:
