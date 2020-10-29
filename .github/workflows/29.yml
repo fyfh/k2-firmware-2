@@ -56,9 +56,10 @@ jobs:
       run: |
            cp -r $GITHUB_WORKSPACE/lede/package/lean $GITHUB_WORKSPACE/openwrt/package/lean
            #cp -r ~/lede/package/libs/librpc ~/openwrt/package/libs
-           #cp -r $GITHUB_WORKSPACE/lede/package/network/config/firewall/Makefile $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/
-           #cp -r $GITHUB_WORKSPACE/lede/package/network/config/firewall/patches $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/
-           #sed -i "s/kmod-ipt-nat/& +iptables-mod-fullconenat/" $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/Makefile
+           cp -r $GITHUB_WORKSPACE/lede/package/network/config/firewall/Makefile $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/
+           cp -r $GITHUB_WORKSPACE/lede/package/network/config/firewall/patches $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/
+           sed -i "s/kmod-ipt-nat/& +iptables-mod-fullconenat/" $GITHUB_WORKSPACE/openwrt/package/network/config/firewall/Makefile
+           rm $GITHUB_WORKSPACE/openwrt/include/target.mk && wget https://raw.githubusercontent.com/fyfh/openwrt-yi/main/target.mk && cp target.mk $GITHUB_WORKSPACE/openwrt/include/target.mk
            
     - name: add 16M config
       run: |
