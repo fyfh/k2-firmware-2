@@ -1,5 +1,5 @@
 name: trojan ipk
-on: push
+#on: push
 env:
   FILE: openwrt-sdk-19.07.3-ramips-mt7620_gcc-7.5.0_musl.Linux-x86_64
 jobs:
